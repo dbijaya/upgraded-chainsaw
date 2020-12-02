@@ -9,11 +9,11 @@ def calculateQuartile(arr):
 def divideArray(arr):
     n = len(arr)
     if n%2==0:
-        arr1 = arr[0:(n//2)]
-        arr2 = arr[(n//2):(n+1)]
+        arr1 = arr[:(n//2)]
+        arr2 = arr[(n//2):]
     else:
-        arr1 = arr[0:(n//2)]
-        arr2 = arr[(n//2+1):(n+1)]
+        arr1 = arr[:(n//2)]
+        arr2 = arr[(n//2+1):]
     return arr1, arr2
 
 b = int(input())
